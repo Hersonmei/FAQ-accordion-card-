@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    padding: 9rem 1.5rem;
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    /* display: flex; Será?? */
+}
+
+.image{
+    width: 70%;
+    position: absolute;
+    top: -2rem;
+}
+
+.shadow{
+    position: absolute;
+    
+}
