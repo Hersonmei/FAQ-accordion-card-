@@ -34,8 +34,8 @@ main {
   top: 0;
 }
 
-.img-container{
-  display: relative;
+.hidden, .box{
+  display: none;
 }
 
 /* HEADER */
@@ -94,11 +94,62 @@ footer{
 }
 
 @media(min-width:900px){
+  .mobile{
+    display: none;
+  }
+  
   body{
     display: flex;
     justify-content: center;
+    padding: 8.4rem 1.5rem 3rem 3.3rem;
   }
   main{
-    width: 900px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 930px;
+    max-height: 500px;
   }
-}
+
+  .img-container{
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 116% 76%;
+  }
+
+  .desktop{
+    display: block;
+    position: relative;
+  }
+
+  .hidden{
+    right: 17%;
+    top: 12%;
+  }
+
+  .box {
+    right: 19%;
+    bottom: 30%;
+   }
+
+  section {
+    /* Talvez um space evenly com espaço nos cantos para ajustar esses questionário. */
+    padding: 0 7rem 0 .5rem;
+  }
+
+  .title {
+    margin: 2.5rem 0 2rem 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .question {
+    font-size: .9rem;
+    letter-spacing: 0px;
+  }
+  
+  .answer {
+    font-size: 0.7rem;
+    letter-spacing: .4px;
+    margin-top: .7rem;
+  }
+} 
