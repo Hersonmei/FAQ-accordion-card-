@@ -1,31 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    padding: 9rem 1.5rem;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  padding: 9rem 1.5rem;
+  position: relative;
+  min-height: 100vh;
 }
 
-main{
-    background-color: white;
-    border-radius: 20px;
-    position: relative;
-    /* display: flex; Será?? */
+main {
+  background-color: white; 
+  border-radius: 20px;
+  position: relative;
 }
 
-.image{
-    width: 70%;
-    position: absolute;
-    top: -2rem;
+/* IMAGES */
+
+.image {
+  width: 70%;
+  position: absolute;
+  top: -6.4rem;
+  left: 15%;
 }
 
-.shadow{
-    position: absolute;
-    
+.shadow {
+  position: absolute;
+  top: 0;
+}
+
+.img-container{
+  display: relative;
+}
+
+/* HEADER */
+
+.title {
+  margin-top: 8.5rem;
+  font-size: 2rem;
+}
+
+/* CONTENT */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.6rem 3rem 1.6rem;
+}
+
+.question {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.answer {
+  font-size: 0.8rem;
+  letter-spacing: .1px;
+  color: hsl(240, 6%, 50%);
+}
+
+.space{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.space img{
+  object-fit: contain;
+}
+
+.question-container{
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+section:nth-child(2){
+  margin-top: 16px;
+}
+
+/* FOOTER */
+footer{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+@media(min-width:900px){
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  main{
+    width: 900px;
+  }
 }
