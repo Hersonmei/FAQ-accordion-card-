@@ -6,11 +6,12 @@ const arrow = document.querySelectorAll('.arrow')
 
 space.forEach((spac, idx) => {
     spac.addEventListener('click', () => {
-        removeActiveClasse();
-        removeShowClasse();
+        removeActiveClasse()
+        // removeShowClasse()
+        removeRotateClasse()
 
         question[idx].classList.add('active')
-        answer[idx].classList.add('show')
+        answer[idx].classList.toggle('show')
         arrow[idx].classList.add('rotate')   
     })
 })

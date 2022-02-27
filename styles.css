@@ -18,7 +18,7 @@ main {
   background-color: white; 
   border-radius: 20px;
   position: relative;
-  max-height: 490px;
+  max-height: 700px;
 }
 
 /* IMAGES */
@@ -62,6 +62,7 @@ section {
 
 .question:hover{
   color: hsl(14, 88%, 65%);
+  cursor: pointer;
 }
 
 .question.active{
@@ -78,13 +79,13 @@ section {
   font-size: 0.8rem;
   letter-spacing: .1px;
   color: hsl(240, 6%, 50%);
+  margin-top: .7rem;
   transition: display;
 }
 
 .answer.show{
   display: block;
 }
-
 
 .space{
   display: flex;
@@ -114,6 +115,22 @@ footer{
   right: 0;
 }
 
+@media(min-width: 500px){
+  .image {
+    width: 60%;
+    position: fixed;
+    top: 2%;
+    left: 21%;
+    max-height: 260px;
+  }
+  
+  .shadow {
+    position: fixed;
+    top: 15%;
+    max-height: 180px;
+  }
+}
+
 @media(min-width:900px){
   .mobile{
     display: none;
@@ -124,11 +141,12 @@ footer{
     justify-content: center;
     padding: 8.4rem 1.5rem 3rem 3.3rem;
   }
+
   main{
     display: grid;
     grid-template-columns: auto 1fr;
     width: 930px;
-    max-height: 500px;
+    max-height: 30rem;
   }
 
   .img-container{
@@ -153,7 +171,7 @@ footer{
    }
 
   section {
-    padding: 0 7rem 0 .5rem;
+    padding: 0 7rem 1rem .5rem;
   }
 
   .title {
@@ -170,7 +188,7 @@ footer{
   .answer {
     font-size: 0.7rem;
     letter-spacing: .4px;
-    margin-top: .7rem;
+    
   }
 
   
