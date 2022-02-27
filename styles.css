@@ -18,6 +18,7 @@ main {
   background-color: white; 
   border-radius: 20px;
   position: relative;
+  max-height: 490px;
 }
 
 /* IMAGES */
@@ -59,11 +60,31 @@ section {
   letter-spacing: 1px;
 }
 
+.question:hover{
+  color: hsl(14, 88%, 65%);
+}
+
+.question.active{
+  font-weight: bold;
+  color: black;
+}
+
+.arrow.rotate{
+  transform: rotate(180deg);
+}
+
 .answer {
+  display: none;
   font-size: 0.8rem;
   letter-spacing: .1px;
   color: hsl(240, 6%, 50%);
+  transition: display;
 }
+
+.answer.show{
+  display: block;
+}
+
 
 .space{
   display: flex;
@@ -132,7 +153,6 @@ footer{
    }
 
   section {
-    /* Talvez um space evenly com espaço nos cantos para ajustar esses questionário. */
     padding: 0 7rem 0 .5rem;
   }
 
@@ -152,4 +172,6 @@ footer{
     letter-spacing: .4px;
     margin-top: .7rem;
   }
+
+  
 } 
